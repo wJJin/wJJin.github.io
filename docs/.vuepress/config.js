@@ -9,6 +9,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
   description: description,
+  base:'/',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -28,6 +29,10 @@ module.exports = {
         sizes: "192x192",
         href: "images/maskable_icon_x192.png",
       },
+    ],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
     ],
   ],
 
@@ -58,28 +63,27 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: "React",
+        title: "react",
         collapsable: true,
-        children: ['react/start']
+        children: ['react/start'],
       },
       {
-        title: "JS",
+        title: "javascript",
         collapsable: true,
-        children: ['js/start']
+        children: ['javascript/start'],
       },
       {
-        title: "Django",
+        title: "django",
         collapsable: true,
-        children: ['django/start']
+        children: ['django/start'],
       },
     ]
-     
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-   plugins: [
+  plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
     [
