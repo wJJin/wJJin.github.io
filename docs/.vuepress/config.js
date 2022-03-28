@@ -19,8 +19,8 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ["link", { rel: "shortcut icon", href: "favicon.ico" }],
-    ["link", { rel: "manifest", href: "manifest.json" }],
+    ["link", { rel: "shortcut icon", href: "/favicon.ico" }],
+    ["link", { rel: "manifest", href: "/manifest.json" }],
     [
       "link",
       {
@@ -71,20 +71,7 @@ module.exports = {
         title: "Django",
         collapsable: true,
         children: ['django/start']
-      }
-    ],
-    plugins: [
-      // ....
-      [
-        "@vuepress/pwa",
-        {
-          serviceWorker: true,
-          updatePopup: {
-            message: "새 컨텐츠가 등록되었습니다. 새로고침 버튼을 눌러주세요😀",
-            buttonText: "새로고침",
-          },
-        },
-      ],
+      },
     ]
      
   },
@@ -92,8 +79,18 @@ module.exports = {
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
+   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    [
+      "@vuepress/pwa",
+      {
+        serviceWorker: true,
+        updatePopup: {
+          message: "새 컨텐츠가 등록되었습니다. 새로고침 버튼을 눌러주세요😀",
+          buttonText: "새로고침",
+        },
+      },
+    ],
   ]
 }
