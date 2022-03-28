@@ -1,0 +1,20 @@
+{
+  "name": "node",
+  "version": "0.0.1",
+  "description": "docs",
+  "main": "index.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "/node",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-pwa": "^1.9.7",
+    "vuepress": "^1.9.7"
+  }
+}
