@@ -19,8 +19,8 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ["link", { rel: "shortcut icon", href: "./favicon.ico" }],
-    ["link", { rel: "manifest", href: "./manifest.json" }],
+    ["link", { rel: "shortcut icon", href: "./public/favicon.ico" }],
+    ["link", { rel: "manifest", href: "./public/manifest.json" }],
     [
       "link",
       {
