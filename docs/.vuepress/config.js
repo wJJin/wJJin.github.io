@@ -70,7 +70,7 @@ module.exports = {
       {
         title: "javascript",
         collapsable: true,
-        children: ['javascript/start'],
+        children: ['js/start'],
       },
       {
         title: "django",
